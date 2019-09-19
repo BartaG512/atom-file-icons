@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'Source Sans Pro';
-	src: url("atom://atom-file-icons/fonts/sourcesanspro-bold.ttf");
+	// font-family: 'Source Sans Pro';
+	// src: url("atom://atom-file-icons/fonts/sourcesanspro-bold.ttf");
 }
 
 .file-icon(@filename) {
@@ -47,15 +47,20 @@
 }
 
 .project-root-header {
-	background-color: #3A3A3A;
-	text-transform: uppercase;
-	font-family: 'Source Sans Pro';
-	padding-left: 5px;
-	color: darken(white, 20%) !important;
+	// font-family: 'Octicons Regular';
+	// font-weight: normal;
+	// font-style: normal;
+	// display: inline-block;
+	// line-height: 1;
+	// -webkit-font-smoothing: antialiased;
+	// text-decoration: none;
+	// font-size: 12px;
+	// width: 12px;
+	// height: 12px;
+	// content: "\f0a3";
 }
 
 .icon-repo:before {
-	display: none;
 }
 
 .list-tree.has-collapsable-children .list-nested-item > .list-item::before {
@@ -101,6 +106,10 @@
 	[data-name$=".es6"]:before,
 	[data-name$=".js"]:before {
 		.file-icon(javascript);
+	}
+
+	[data-name$=".test.js"]:before {
+		.file-icon(test-javascript);
 	}
 
 	[data-name$=".css"]:before {
@@ -511,7 +520,7 @@
 	[data-name$=".hxx"]:before {
 		.file-icon(cpp);
 	}
-	
+
 }
 
 .tree-view {
